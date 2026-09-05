@@ -1,0 +1,13 @@
+{
+  "title": "DIKWP FutureValue Ark OS v1.0.0",
+  "asset_inputs": 11,
+  "scenario_inputs": 9,
+  "status": "完成：2,500 个可行候选；所有计算留在本机。",
+  "kpi_cards": 8,
+  "rebalance_rows": 11,
+  "warning_rows": 1,
+  "elapsed_seconds": 0.124,
+  "page_errors": [],
+  "passed": true,
+  "notice": "Headless browser smoke test using page.set_content; not a full usability or security assessment."
+}

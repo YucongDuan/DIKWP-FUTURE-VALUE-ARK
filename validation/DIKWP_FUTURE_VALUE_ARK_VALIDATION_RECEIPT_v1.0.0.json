@@ -1,0 +1,90 @@
+{
+  "schema": "dikwp-valueark-validation-1.0",
+  "version": "1.0.0",
+  "validated_at": "2026-09-02",
+  "status": "PASSED",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+  },
+  "inventory": {
+    "broad_asset_classes": 11,
+    "plural_world_scenarios": 9,
+    "python_modules": 10,
+    "python_source_lines": 950,
+    "test_files": 6,
+    "automated_tests": 16,
+    "standalone_html_bytes": 65610
+  },
+  "test_results": {
+    "pytest_passed": 16,
+    "pytest_failed": 0
+  },
+  "static_audit": {
+    "files_scanned": 10,
+    "findings": [],
+    "passed": true,
+    "notice": "Static token/AST audit; not a substitute for independent security assessment."
+  },
+  "bounded_model_check": {
+    "model": "ValueArk bounded action-state abstraction",
+    "states": 4,
+    "transitions_checked": 4,
+    "max_shortest_path_depth": 2,
+    "violations": [],
+    "passed": true,
+    "scope_notice": "Finite action-state abstraction only; not a proof for arbitrary deployments or financial outcomes."
+  },
+  "browser_smoke": {
+    "title": "DIKWP FutureValue Ark OS v1.0.0",
+    "asset_inputs": 11,
+    "scenario_inputs": 9,
+    "status": "完成：2,500 个可行候选；所有计算留在本机。",
+    "kpi_cards": 8,
+    "rebalance_rows": 11,
+    "warning_rows": 1,
+    "elapsed_seconds": 0.124,
+    "page_errors": [],
+    "passed": true,
+    "notice": "Headless browser smoke test using page.set_content; not a full usability or security assessment."
+  },
+  "distribution_replay": {
+    "source_demo": true,
+    "pyz_demo": true,
+    "wheel_isolated_demo": true,
+    "target_weight_hashes": [
+      "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa"
+    ],
+    "identical_across_python_distributions": true,
+    "browser_note": "The standalone HTML uses a separate deterministic PRNG; it enforces the same declared constraints and score structure but may select a different near-optimal point."
+  },
+  "synthetic_demo": {
+    "portfolio_total": 1000000.0,
+    "profile": "平衡韧性",
+    "liquidity_floor_weight": 0.194,
+    "current_declared_worst_real_return": -0.144315,
+    "target_declared_worst_real_return": -0.0652258837432762,
+    "current_declared_scenario_wealth_floor": 855685.0,
+    "target_declared_scenario_wealth_floor": 934774.1162567238,
+    "target_turnover": 0.4526753482339361,
+    "note": "Synthetic example only. Not a recommendation, forecast, client result or guarantee."
+  },
+  "constitutional_invariants": {
+    "automatic_trade_authority": 0,
+    "automatic_broker_connection": 0,
+    "leverage_allowed": false,
+    "short_selling_allowed": false,
+    "derivatives_recommendation": false,
+    "specific_security_recommendation": false,
+    "scenario_numbers_are_forecasts": false
+  },
+  "limitations": [
+    "Browser smoke testing is not a full accessibility, usability or penetration test.",
+    "The finite action-state model is not a proof of financial performance or arbitrary deployments.",
+    "Stress returns and long-run returns are assumptions, not forecasts.",
+    "The declared-scenario wealth floor is not a real-world capital guarantee.",
+    "HTML and Python may choose different near-optimal targets because their deterministic pseudo-random implementations differ."
+  ]
+}

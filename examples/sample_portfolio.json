@@ -1,0 +1,45 @@
+{
+  "schema": "dikwp-valueark-portfolio-1.0",
+  "name": "合成示例：平衡韧性",
+  "settings": {
+    "currency": "CNY",
+    "jurisdiction": "PRC",
+    "profile": "balanced",
+    "acevo_alert": "yellow",
+    "monthly_expenses": 12000,
+    "reserve_months": 12,
+    "near_term_outflows": 50000,
+    "monthly_contribution": 5000,
+    "horizon_years": 10,
+    "insured_limit_per_institution": 500000,
+    "insured_institution_count": 2,
+    "high_interest_debt": 0,
+    "debt_apr": 0.0,
+    "seed": 95095,
+    "candidate_count": 25000
+  },
+  "holdings": {
+    "cash": 180000,
+    "short_gov": 160000,
+    "inflation_linked": 80000,
+    "quality_bonds": 90000,
+    "global_equity": 250000,
+    "ai_tech": 120000,
+    "gold": 70000,
+    "commodities": 20000,
+    "real_assets": 30000,
+    "foreign_reserve": 0,
+    "speculative": 0
+  },
+  "scenario_weights": {
+    "constitutional_productivity": 0.15,
+    "corporate_swarm_reversal": 0.12,
+    "agentic_cyber_liquidity": 0.16,
+    "recursive_automation_deflation": 0.12,
+    "inflation_fiscal_stress": 0.15,
+    "fragmentation_commodity_shock": 0.12,
+    "commons_rebalancing": 0.08,
+    "stable_growth": 0.1
+  },
+  "notes": "完全合成示例；不代表任何个人或客户。"
+}

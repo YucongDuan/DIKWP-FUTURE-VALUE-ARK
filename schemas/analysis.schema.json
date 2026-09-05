@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp/valueark/analysis.schema.json",
+  "title": "DIKWP FutureValue Ark Analysis Output",
+  "type": "object",
+  "required": [
+    "schema", "version", "status", "portfolio_total", "current_weights",
+    "target_weights", "current_metrics", "target_metrics", "rebalance_plan",
+    "warnings", "constitutional_invariants"
+  ],
+  "properties": {
+    "schema": {"const": "dikwp-valueark-analysis-1.0"},
+    "version": {"const": "1.0.0"},
+    "status": {"const": "EDUCATIONAL_DECISION_SUPPORT_ONLY"},
+    "portfolio_total": {"type": "number", "exclusiveMinimum": 0},
+    "liquidity_floor_weight": {"type": "number", "minimum": 0, "maximum": 0.95},
+    "current_weights": {"$ref": "#/$defs/weights"},
+    "target_weights": {"$ref": "#/$defs/weights"},
+    "current_metrics": {"type": "object"},
+    "target_metrics": {"type": "object"},
+    "rebalance_plan": {"type": "array"},
+    "warnings": {"type": "array"},
+    "constitutional_invariants": {
+      "type": "object",
+      "required": ["automatic_trade_authority", "automatic_broker_connection", "leverage_allowed"],
+      "properties": {
+        "automatic_trade_authority": {"const": 0},
+        "automatic_broker_connection": {"const": 0},
+        "leverage_allowed": {"const": false},
+        "short_selling_allowed": {"const": false},
+        "specific_security_recommendation": {"const": false},
+        "scenario_numbers_are_forecasts": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "weights": {
+      "type": "object",
+      "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
+    }
+  },
+  "additionalProperties": true
+}

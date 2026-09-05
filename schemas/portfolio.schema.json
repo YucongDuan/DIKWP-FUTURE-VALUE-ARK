@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp/valueark/portfolio.schema.json",
+  "title": "DIKWP FutureValue Ark Portfolio Input",
+  "type": "object",
+  "required": ["schema", "settings", "holdings"],
+  "properties": {
+    "schema": {"const": "dikwp-valueark-portfolio-1.0"},
+    "name": {"type": "string"},
+    "settings": {
+      "type": "object",
+      "properties": {
+        "currency": {"type": "string"},
+        "jurisdiction": {"type": "string"},
+        "profile": {"enum": ["preservation", "balanced", "growth"]},
+        "acevo_alert": {"enum": ["green", "yellow", "orange", "red"]},
+        "monthly_expenses": {"type": "number", "minimum": 0},
+        "reserve_months": {"type": "number", "minimum": 0},
+        "near_term_outflows": {"type": "number", "minimum": 0},
+        "monthly_contribution": {"type": "number", "minimum": 0},
+        "horizon_years": {"type": "integer", "minimum": 1},
+        "insured_limit_per_institution": {"type": "number", "minimum": 0},
+        "insured_institution_count": {"type": "integer", "minimum": 0},
+        "high_interest_debt": {"type": "number", "minimum": 0},
+        "debt_apr": {"type": "number", "minimum": 0},
+        "seed": {"type": "integer"},
+        "candidate_count": {"type": "integer", "minimum": 1000, "maximum": 200000}
+      },
+      "additionalProperties": true
+    },
+    "holdings": {
+      "type": "object",
+      "properties": {
+        "cash": {"type": "number", "minimum": 0},
+        "short_gov": {"type": "number", "minimum": 0},
+        "inflation_linked": {"type": "number", "minimum": 0},
+        "quality_bonds": {"type": "number", "minimum": 0},
+        "global_equity": {"type": "number", "minimum": 0},
+        "ai_tech": {"type": "number", "minimum": 0},
+        "gold": {"type": "number", "minimum": 0},
+        "commodities": {"type": "number", "minimum": 0},
+        "real_assets": {"type": "number", "minimum": 0},
+        "foreign_reserve": {"type": "number", "minimum": 0},
+        "speculative": {"type": "number", "minimum": 0}
+      },
+      "minProperties": 1,
+      "additionalProperties": false
+    },
+    "scenario_weights": {
+      "type": "object",
+      "additionalProperties": {"type": "number", "minimum": 0}
+    },
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,5 @@
+recursive-include src/dikwp_valueark/resources *.json *.html
+include README.md README_CN.md LICENSE DISCLAIMER.md MODEL_CARD.md
+recursive-include schemas *.json
+recursive-include docs *.md
+recursive-include examples *.json *.csv

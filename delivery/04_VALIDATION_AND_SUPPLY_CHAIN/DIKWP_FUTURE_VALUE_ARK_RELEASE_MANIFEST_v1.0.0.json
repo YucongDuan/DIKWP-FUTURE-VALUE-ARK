@@ -1,0 +1,87 @@
+{
+  "schema": "dikwp-valueark-release-manifest-1.0",
+  "name": "DIKWP FutureValue Ark OS",
+  "version": "1.0.0",
+  "released_at": "2026-09-02",
+  "git_commit": "a9b263b39c8445d802b809e40b3c7aaf1f7a0706",
+  "git_tag": "v1.0.0",
+  "license": "Apache-2.0",
+  "status": "RESEARCH_ALPHA_EDUCATIONAL_DECISION_SUPPORT",
+  "direct_use_entry": "DIKWP_FUTURE_VALUE_ARK_v1.0.0.html",
+  "runtime": {
+    "standalone_html": "modern browser; no network required",
+    "python": "3.10+",
+    "python_runtime_dependencies": []
+  },
+  "features": {
+    "asset_classes": 11,
+    "plural_worlds": 9,
+    "automatic_trade_authority": 0,
+    "broker_connection": 0,
+    "leverage": false,
+    "specific_security_recommendations": false
+  },
+  "artifacts": [
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_v1.0.0.html",
+      "bytes": 65610,
+      "sha256": "1412fa9c416dd70eed0e62b540c8e95a4491b0da99d061cac6d09949f36ec2bc"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_OS_v1.0.0_FULL_SOURCE.zip",
+      "bytes": 1445044,
+      "sha256": "a01eda3792dfbbbe21a0162e983b8b02d6131095786b3b27b4db40a356d4ba63"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_OS_v1.0.0.pyz",
+      "bytes": 79527,
+      "sha256": "edfbee78b8590cc6d03403bc993a30b704c803dafe7d2db5ff139bee52e4f2e3"
+    },
+    {
+      "filename": "dikwp_valueark-1.0.0-py3-none-any.whl",
+      "bytes": 48358,
+      "sha256": "170e84e5ad33fb07f036c7af33b0972df9850dcee790b37f021365ff08f704e6"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_OS_v1.0.0.bundle",
+      "bytes": 1385098,
+      "sha256": "052ce53d955e336bf6995be5fefb27b9486b2837f18ca287f4afade29e8aec01"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_SYSTEM_REPORT_CN_v1.0.0.md",
+      "bytes": 6398,
+      "sha256": "5f2e9f6765c4df08a156be53d15d96f97bc7c7ae7ae77b7fbe8ff90e09cb8bf7"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_METHODOLOGY_CN_v1.0.0.md",
+      "bytes": 3652,
+      "sha256": "2295dbb8e23bc13519ba1ad9a93080cf25a74aa3ed3a4c6ebac197e11b81843f"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_USER_GUIDE_CN_v1.0.0.md",
+      "bytes": 2201,
+      "sha256": "2f19350be74a6ff8f31a33d1375200a91a1f0f508d2de8be4399d4a1c94cee88"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_VALIDATION_RECEIPT_v1.0.0.json",
+      "bytes": 3426,
+      "sha256": "a1f9c6b65c83e5b7af656ac4de3e8a257a6afe3ddb4d197dc72ee3e3068dc3b7"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_DISTRIBUTION_VALIDATION_RECEIPT_v1.0.0.json",
+      "bytes": 2559,
+      "sha256": "b62b81d4ade8f3a0beef11656735378a1d5573cc8218756d35686cd13d8e62ad"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_SBOM_v1.0.0.spdx.json",
+      "bytes": 31901,
+      "sha256": "da4a81c652ad01a58cdbb5974b44d6651857de24743197ad370d449f326bd15d"
+    },
+    {
+      "filename": "DIKWP_FUTURE_VALUE_ARK_BROWSER_SCREENSHOT_v1.0.0.png",
+      "bytes": 1353020,
+      "sha256": "027ac19f0dd0cddfa2eef0515923226da82d8306ac99b1ba5ba8b5e5c3b43f4f"
+    }
+  ],
+  "notice": "Scenario values are assumptions, not forecasts. No artifact is a capital guarantee or specific-security recommendation."
+}

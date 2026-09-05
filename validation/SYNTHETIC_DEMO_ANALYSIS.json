@@ -1,0 +1,505 @@
+{
+  "schema": "dikwp-valueark-analysis-1.0",
+  "version": "1.0.0",
+  "status": "EDUCATIONAL_DECISION_SUPPORT_ONLY",
+  "generated_from": "合成示例：平衡韧性",
+  "settings": {
+    "currency": "CNY",
+    "jurisdiction": "PRC",
+    "profile": "balanced",
+    "acevo_alert": "yellow",
+    "monthly_expenses": 12000,
+    "reserve_months": 12,
+    "near_term_outflows": 50000,
+    "monthly_contribution": 5000,
+    "horizon_years": 10,
+    "insured_limit_per_institution": 500000,
+    "insured_institution_count": 2,
+    "high_interest_debt": 0,
+    "debt_apr": 0.0,
+    "seed": 95095,
+    "candidate_count": 20000
+  },
+  "profile": {
+    "id": "balanced",
+    "name_zh": "平衡韧性",
+    "max_equity": 0.55,
+    "max_ai": 0.12,
+    "max_speculative": 0.03,
+    "min_inflation_hedge": 0.15,
+    "max_single": 0.4,
+    "no_trade_band": 0.04,
+    "objective": {
+      "worst": 0.35,
+      "cvar": 0.2,
+      "mean": 0.3,
+      "dispersion": 0.1,
+      "turnover": 0.012,
+      "hhi": 0.008
+    },
+    "template": {
+      "cash": 0.1,
+      "short_gov": 0.15,
+      "inflation_linked": 0.15,
+      "quality_bonds": 0.1,
+      "global_equity": 0.28,
+      "ai_tech": 0.08,
+      "gold": 0.06,
+      "commodities": 0.02,
+      "real_assets": 0.04,
+      "foreign_reserve": 0.02,
+      "speculative": 0.0
+    }
+  },
+  "portfolio_total": 1000000.0,
+  "liquidity_floor_weight": 0.194,
+  "current_weights": {
+    "cash": 0.18,
+    "short_gov": 0.16,
+    "inflation_linked": 0.08,
+    "quality_bonds": 0.09,
+    "global_equity": 0.25,
+    "ai_tech": 0.12,
+    "gold": 0.07,
+    "commodities": 0.02,
+    "real_assets": 0.03,
+    "foreign_reserve": 0.0,
+    "speculative": 0.0
+  },
+  "target_weights": {
+    "cash": 0.1302820694323461,
+    "short_gov": 0.3313715187292617,
+    "inflation_linked": 0.2559576943854604,
+    "quality_bonds": 0.042282409582133154,
+    "global_equity": 0.03736478776661156,
+    "ai_tech": 0.006779258722148326,
+    "gold": 0.0961489164741668,
+    "commodities": 0.09453289355144572,
+    "real_assets": 0.0006161262628247219,
+    "foreign_reserve": 0.003522538126606563,
+    "speculative": 0.0011417869669950516
+  },
+  "target_ranges": {
+    "cash": {
+      "lower": 0.04829435184717144,
+      "target": 0.1302820694323461,
+      "upper": 0.3051568344312207
+    },
+    "short_gov": {
+      "lower": 0.11139499411853508,
+      "target": 0.3313715187292617,
+      "upper": 0.3920268941233603
+    },
+    "inflation_linked": {
+      "lower": 0.12366237031218233,
+      "target": 0.2559576943854604,
+      "upper": 0.33498965735118336
+    },
+    "quality_bonds": {
+      "lower": 0.0037510800804946565,
+      "target": 0.042282409582133154,
+      "upper": 0.08076338300300753
+    },
+    "global_equity": {
+      "lower": 0.023364787766611564,
+      "target": 0.03736478776661156,
+      "upper": 0.11046563573623286
+    },
+    "ai_tech": {
+      "lower": 0.0,
+      "target": 0.006779258722148326,
+      "upper": 0.03444820529071503
+    },
+    "gold": {
+      "lower": 0.01093980458324494,
+      "target": 0.0961489164741668,
+      "upper": 0.20918777213567577
+    },
+    "commodities": {
+      "lower": 0.001817132695579739,
+      "target": 0.09453289355144572,
+      "upper": 0.15
+    },
+    "real_assets": {
+      "lower": 0.0,
+      "target": 0.0006161262628247219,
+      "upper": 0.05991661716916197
+    },
+    "foreign_reserve": {
+      "lower": 0.0,
+      "target": 0.003522538126606563,
+      "upper": 0.07258843506409748
+    },
+    "speculative": {
+      "lower": 0.0,
+      "target": 0.0011417869669950516,
+      "upper": 0.01514178696699505
+    }
+  },
+  "current_metrics": {
+    "scenario_returns": {
+      "constitutional_productivity": 0.044535,
+      "corporate_swarm_reversal": -0.079415,
+      "agentic_cyber_liquidity": -0.08781499999999999,
+      "recursive_automation_deflation": -0.048315000000000004,
+      "inflation_fiscal_stress": -0.043214999999999996,
+      "fragmentation_commodity_shock": -0.061915,
+      "commons_rebalancing": 0.010685,
+      "stable_growth": 0.027985,
+      "correlation_custody_break": -0.144315
+    },
+    "weighted_mean": -0.03925981132075471,
+    "worst_case": -0.144315,
+    "cvar_25": -0.09918103773584906,
+    "dispersion": 0.05330282875482582,
+    "long_run_real": 0.018915,
+    "turnover": 0.0,
+    "hhi": 0.1556,
+    "annual_fee": 0.001915,
+    "liquidity_weight": 0.33999999999999997,
+    "inflation_hedge_weight": 0.2,
+    "equity_weight": 0.37,
+    "ai_weight": 0.12,
+    "speculative_weight": 0.0,
+    "real_wealth_floor": 855685.0,
+    "declared_scenario_wealth_floor": 855685.0,
+    "horizon_value_real": 1206089.5586902553
+  },
+  "target_metrics": {
+    "scenario_returns": {
+      "constitutional_productivity": 0.0028770419319568445,
+      "corporate_swarm_reversal": 0.013954768882059534,
+      "agentic_cyber_liquidity": 0.025621340449604055,
+      "recursive_automation_deflation": 0.010644817968893156,
+      "inflation_fiscal_stress": 0.02155874865706088,
+      "fragmentation_commodity_shock": 0.023240184363025898,
+      "commons_rebalancing": 0.008174205516275929,
+      "stable_growth": 0.010656404563902462,
+      "correlation_custody_break": -0.0652258837432762
+    },
+    "weighted_mean": 0.010671301395341969,
+    "worst_case": -0.0652258837432762,
+    "cvar_25": -0.011443077099652338,
+    "dispersion": 0.020118200258514407,
+    "long_run_real": 0.009688147236116289,
+    "turnover": 0.4526753482339361,
+    "hhi": 0.21371990389563827,
+    "annual_fee": 0.001891453755098636,
+    "liquidity_weight": 0.4616535881616078,
+    "inflation_hedge_weight": 0.4472556306738976,
+    "equity_weight": 0.044144046488759886,
+    "ai_weight": 0.006779258722148326,
+    "speculative_weight": 0.0011417869669950516,
+    "real_wealth_floor": 934774.1162567238,
+    "declared_scenario_wealth_floor": 934774.1162567238,
+    "horizon_value_real": 1101216.1727165717
+  },
+  "optimizer": {
+    "method": "seeded constructive random search under hard constraints",
+    "candidate_target": 20000,
+    "feasible_candidates": 20000,
+    "attempts": 20002,
+    "best_score": -0.031069967747298324,
+    "near_optimal_sample": 200,
+    "scenario_weights_are_probabilities": false
+  },
+  "scenario_outcomes": [
+    {
+      "scenario_id": "correlation_custody_break",
+      "scenario_name_zh": "相关性失效与托管可达性冲击",
+      "importance_weight": 0.056603773584905655,
+      "current_real_return": -0.144315,
+      "target_real_return": -0.0652258837432762,
+      "target_value_after_scenario": 934774.1162567238
+    },
+    {
+      "scenario_id": "constitutional_productivity",
+      "scenario_name_zh": "宪制化AI生产率扩散",
+      "importance_weight": 0.14150943396226415,
+      "current_real_return": 0.044535,
+      "target_real_return": 0.0028770419319568445,
+      "target_value_after_scenario": 1002877.0419319568
+    },
+    {
+      "scenario_id": "commons_rebalancing",
+      "scenario_name_zh": "公共治理与收益再平衡",
+      "importance_weight": 0.07547169811320754,
+      "current_real_return": 0.010685,
+      "target_real_return": 0.008174205516275929,
+      "target_value_after_scenario": 1008174.205516276
+    },
+    {
+      "scenario_id": "recursive_automation_deflation",
+      "scenario_name_zh": "递归自动化与需求收缩",
+      "importance_weight": 0.11320754716981131,
+      "current_real_return": -0.048315000000000004,
+      "target_real_return": 0.010644817968893156,
+      "target_value_after_scenario": 1010644.8179688932
+    },
+    {
+      "scenario_id": "stable_growth",
+      "scenario_name_zh": "稳定增长基线",
+      "importance_weight": 0.09433962264150944,
+      "current_real_return": 0.027985,
+      "target_real_return": 0.010656404563902462,
+      "target_value_after_scenario": 1010656.4045639024
+    },
+    {
+      "scenario_id": "corporate_swarm_reversal",
+      "scenario_name_zh": "企业群智集中与估值反转",
+      "importance_weight": 0.11320754716981131,
+      "current_real_return": -0.079415,
+      "target_real_return": 0.013954768882059534,
+      "target_value_after_scenario": 1013954.7688820596
+    },
+    {
+      "scenario_id": "inflation_fiscal_stress",
+      "scenario_name_zh": "持续通胀与财政压力",
+      "importance_weight": 0.14150943396226415,
+      "current_real_return": -0.043214999999999996,
+      "target_real_return": 0.02155874865706088,
+      "target_value_after_scenario": 1021558.748657061
+    },
+    {
+      "scenario_id": "fragmentation_commodity_shock",
+      "scenario_name_zh": "代理集团碎片化与商品冲击",
+      "importance_weight": 0.11320754716981131,
+      "current_real_return": -0.061915,
+      "target_real_return": 0.023240184363025898,
+      "target_value_after_scenario": 1023240.1843630259
+    },
+    {
+      "scenario_id": "agentic_cyber_liquidity",
+      "scenario_name_zh": "多Agent控制面与流动性冲击",
+      "importance_weight": 0.1509433962264151,
+      "current_real_return": -0.08781499999999999,
+      "target_real_return": 0.025621340449604055,
+      "target_value_after_scenario": 1025621.340449604
+    }
+  ],
+  "rebalance_plan": [
+    {
+      "asset_id": "global_equity",
+      "asset_name_zh": "全球分散股票",
+      "current_weight": 0.25,
+      "target_weight": 0.03736478776661156,
+      "target_range": {
+        "lower": 0.023364787766611564,
+        "target": 0.03736478776661156,
+        "upper": 0.11046563573623286
+      },
+      "current_amount": 250000.0,
+      "target_amount": 37364.78776661156,
+      "difference": -212635.21223338845,
+      "action": "REDUCE_OR_REDIRECT_NEW_MONEY"
+    },
+    {
+      "asset_id": "inflation_linked",
+      "asset_name_zh": "通胀挂钩主权债",
+      "current_weight": 0.08,
+      "target_weight": 0.2559576943854604,
+      "target_range": {
+        "lower": 0.12366237031218233,
+        "target": 0.2559576943854604,
+        "upper": 0.33498965735118336
+      },
+      "current_amount": 80000.0,
+      "target_amount": 255957.6943854604,
+      "difference": 175957.6943854604,
+      "action": "BUY_OR_ADD"
+    },
+    {
+      "asset_id": "short_gov",
+      "asset_name_zh": "短期主权债/国库券",
+      "current_weight": 0.16,
+      "target_weight": 0.3313715187292617,
+      "target_range": {
+        "lower": 0.11139499411853508,
+        "target": 0.3313715187292617,
+        "upper": 0.3920268941233603
+      },
+      "current_amount": 160000.0,
+      "target_amount": 331371.5187292617,
+      "difference": 171371.5187292617,
+      "action": "HOLD_WITHIN_RANGE"
+    },
+    {
+      "asset_id": "ai_tech",
+      "asset_name_zh": "AI/算力/科技集中仓",
+      "current_weight": 0.12,
+      "target_weight": 0.006779258722148326,
+      "target_range": {
+        "lower": 0.0,
+        "target": 0.006779258722148326,
+        "upper": 0.03444820529071503
+      },
+      "current_amount": 120000.0,
+      "target_amount": 6779.258722148326,
+      "difference": -113220.74127785167,
+      "action": "REDUCE_OR_REDIRECT_NEW_MONEY"
+    },
+    {
+      "asset_id": "commodities",
+      "asset_name_zh": "广泛商品",
+      "current_weight": 0.02,
+      "target_weight": 0.09453289355144572,
+      "target_range": {
+        "lower": 0.001817132695579739,
+        "target": 0.09453289355144572,
+        "upper": 0.15
+      },
+      "current_amount": 20000.0,
+      "target_amount": 94532.89355144571,
+      "difference": 74532.89355144571,
+      "action": "HOLD_WITHIN_RANGE"
+    },
+    {
+      "asset_id": "cash",
+      "asset_name_zh": "受保存款/现金",
+      "current_weight": 0.18,
+      "target_weight": 0.1302820694323461,
+      "target_range": {
+        "lower": 0.04829435184717144,
+        "target": 0.1302820694323461,
+        "upper": 0.3051568344312207
+      },
+      "current_amount": 180000.0,
+      "target_amount": 130282.0694323461,
+      "difference": -49717.93056765389,
+      "action": "HOLD_WITHIN_RANGE"
+    },
+    {
+      "asset_id": "quality_bonds",
+      "asset_name_zh": "高质量中期债券",
+      "current_weight": 0.09,
+      "target_weight": 0.042282409582133154,
+      "target_range": {
+        "lower": 0.0037510800804946565,
+        "target": 0.042282409582133154,
+        "upper": 0.08076338300300753
+      },
+      "current_amount": 90000.0,
+      "target_amount": 42282.40958213316,
+      "difference": -47717.59041786684,
+      "action": "REDUCE_OR_REDIRECT_NEW_MONEY"
+    },
+    {
+      "asset_id": "real_assets",
+      "asset_name_zh": "实体资产/基础设施",
+      "current_weight": 0.03,
+      "target_weight": 0.0006161262628247219,
+      "target_range": {
+        "lower": 0.0,
+        "target": 0.0006161262628247219,
+        "upper": 0.05991661716916197
+      },
+      "current_amount": 30000.0,
+      "target_amount": 616.1262628247218,
+      "difference": -29383.87373717528,
+      "action": "HOLD_WITHIN_RANGE"
+    },
+    {
+      "asset_id": "gold",
+      "asset_name_zh": "黄金",
+      "current_weight": 0.07,
+      "target_weight": 0.0961489164741668,
+      "target_range": {
+        "lower": 0.01093980458324494,
+        "target": 0.0961489164741668,
+        "upper": 0.20918777213567577
+      },
+      "current_amount": 70000.0,
+      "target_amount": 96148.9164741668,
+      "difference": 26148.916474166806,
+      "action": "HOLD_WITHIN_RANGE"
+    },
+    {
+      "asset_id": "foreign_reserve",
+      "asset_name_zh": "外币现金/短债储备",
+      "current_weight": 0.0,
+      "target_weight": 0.003522538126606563,
+      "target_range": {
+        "lower": 0.0,
+        "target": 0.003522538126606563,
+        "upper": 0.07258843506409748
+      },
+      "current_amount": 0.0,
+      "target_amount": 3522.538126606563,
+      "difference": 3522.538126606563,
+      "action": "HOLD_WITHIN_RANGE"
+    },
+    {
+      "asset_id": "speculative",
+      "asset_name_zh": "高波动投机仓",
+      "current_weight": 0.0,
+      "target_weight": 0.0011417869669950516,
+      "target_range": {
+        "lower": 0.0,
+        "target": 0.0011417869669950516,
+        "upper": 0.01514178696699505
+      },
+      "current_amount": 0.0,
+      "target_amount": 1141.7869669950517,
+      "difference": 1141.7869669950517,
+      "action": "HOLD_WITHIN_RANGE"
+    }
+  ],
+  "next_contribution_plan": [
+    {
+      "asset_id": "inflation_linked",
+      "asset_name_zh": "通胀挂钩主权债",
+      "amount": 5000.0
+    }
+  ],
+  "insurance_check": {
+    "cash_amount": 180000.0,
+    "declared_insurance_capacity": 1000000.0,
+    "potentially_uninsured_or_unverified": 0.0,
+    "fully_within_declared_capacity": true,
+    "notice": "Coverage depends on institution eligibility, ownership category, account type, accrued interest and jurisdiction. The software does not verify accounts."
+  },
+  "warnings": [
+    {
+      "level": "INFO",
+      "code": "NO_PRIMARY_RULE_BREACH",
+      "message_zh": "未发现预设硬约束违反；这不意味着没有市场、税务、信用、托管或法律风险。"
+    }
+  ],
+  "market_snapshot": {
+    "as_of": "2026-09-01",
+    "jurisdiction": "USD reference only",
+    "cpi_yoy_july_2026": 0.034,
+    "fed_target_low": 0.035,
+    "fed_target_high": 0.0375,
+    "treasury_nominal": {
+      "3m": 0.0392,
+      "1y": 0.0418,
+      "5y": 0.0455,
+      "10y": 0.0479,
+      "30y": 0.0527
+    },
+    "treasury_real": {
+      "5y": 0.0218,
+      "7y": 0.023,
+      "10y": 0.0244,
+      "20y": 0.0278,
+      "30y": 0.0298
+    },
+    "notice_zh": "该快照只用于展示当前利率和通胀环境，不直接决定资产配置；非美元用户必须替换成本币数据。"
+  },
+  "constitutional_invariants": {
+    "automatic_trade_authority": 0,
+    "automatic_broker_connection": 0,
+    "leverage_allowed": false,
+    "short_selling_allowed": false,
+    "derivatives_recommendation": false,
+    "specific_security_recommendation": false,
+    "scenario_numbers_are_forecasts": false
+  },
+  "limitations": [
+    "Broad asset classes are not specific securities and may not be available in every jurisdiction.",
+    "Scenario returns and long-run real returns are editable analytical assumptions, not forecasts.",
+    "The optimizer does not model individual taxes, benefits, estate planning, currency liabilities, bid-ask spreads or product credit risk.",
+    "No trade is executed; all actions require the user and, where appropriate, a licensed professional."
+  ]
+}

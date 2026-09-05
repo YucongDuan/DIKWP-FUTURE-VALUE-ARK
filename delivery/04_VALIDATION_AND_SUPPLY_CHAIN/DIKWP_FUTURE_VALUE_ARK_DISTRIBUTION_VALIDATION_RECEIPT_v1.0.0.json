@@ -1,0 +1,66 @@
+{
+  "schema": "dikwp-valueark-distribution-validation-1.0",
+  "version": "1.0.0",
+  "validated_at": "2026-09-02",
+  "git_commit": "a9b263b39c8445d802b809e40b3c7aaf1f7a0706",
+  "git_tag": "v1.0.0",
+  "replays": {
+    "source_tree": {
+      "target_weight_hash": "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "current_declared_worst_real_return": -0.144315,
+      "target_declared_worst_real_return": -0.0652258837432762,
+      "automatic_trade_authority": 0
+    },
+    "pyz": {
+      "target_weight_hash": "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "current_declared_worst_real_return": -0.144315,
+      "target_declared_worst_real_return": -0.0652258837432762,
+      "automatic_trade_authority": 0
+    },
+    "wheel": {
+      "target_weight_hash": "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "current_declared_worst_real_return": -0.144315,
+      "target_declared_worst_real_return": -0.0652258837432762,
+      "automatic_trade_authority": 0
+    },
+    "source_zip": {
+      "target_weight_hash": "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "current_declared_worst_real_return": -0.144315,
+      "target_declared_worst_real_return": -0.0652258837432762,
+      "automatic_trade_authority": 0
+    },
+    "git_bundle": {
+      "target_weight_hash": "bc17db2a84f9164cd8a72846e2842abcaf77c29a8f22f091e0dd7e50eb5700fa",
+      "current_declared_worst_real_return": -0.144315,
+      "target_declared_worst_real_return": -0.0652258837432762,
+      "automatic_trade_authority": 0
+    }
+  },
+  "identical_python_target_weights": true,
+  "standalone_browser_smoke": {
+    "title": "DIKWP FutureValue Ark OS v1.0.0",
+    "asset_inputs": 11,
+    "scenario_inputs": 9,
+    "status": "完成：2,500 个可行候选；所有计算留在本机。",
+    "kpi_cards": 8,
+    "rebalance_rows": 11,
+    "warning_rows": 1,
+    "elapsed_seconds": 0.124,
+    "page_errors": [],
+    "passed": true,
+    "notice": "Headless browser smoke test using page.set_content; not a full usability or security assessment."
+  },
+  "javascript_syntax_check": {
+    "command": "node --check extracted-inline-script",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "passed": true
+  },
+  "wheel_resource_check": {
+    "standalone_html_embedded": true,
+    "defaults_json_embedded": true
+  },
+  "passed": true,
+  "scope_notice": "Distribution replay validates packaging consistency, not investment performance, market accuracy, suitability or regulatory compliance."
+}

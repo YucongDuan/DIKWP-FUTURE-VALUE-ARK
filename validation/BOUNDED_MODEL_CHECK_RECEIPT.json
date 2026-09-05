@@ -1,0 +1,9 @@
+{
+  "model": "ValueArk bounded action-state abstraction",
+  "states": 4,
+  "transitions_checked": 4,
+  "max_shortest_path_depth": 2,
+  "violations": [],
+  "passed": true,
+  "scope_notice": "Finite action-state abstraction only; not a proof for arbitrary deployments or financial outcomes."
+}

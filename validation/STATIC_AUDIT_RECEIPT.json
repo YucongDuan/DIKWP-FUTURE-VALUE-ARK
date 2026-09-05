@@ -1,0 +1,6 @@
+{
+  "files_scanned": 10,
+  "findings": [],
+  "passed": true,
+  "notice": "Static token/AST audit; not a substitute for independent security assessment."
+}

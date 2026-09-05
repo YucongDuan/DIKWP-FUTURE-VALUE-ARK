@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dikwp-valueark"
+version = "1.0.0"
+description = "Offline plural-world real-wealth resilience decision support"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "Yucong Duan / DIKWP open-source research programme"}
+]
+keywords = ["DIKWP", "asset allocation", "stress testing", "real wealth", "AI civilization", "offline"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Office/Business :: Financial"
+]
+dependencies = []
+
+[project.scripts]
+valueark = "dikwp_valueark.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dikwp_valueark = ["resources/*.json", "resources/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
