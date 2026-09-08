@@ -1,8 +1,10 @@
 # DIKWP FutureValue Ark OS v1.0.0
 
+Created by Yucong Duan (段玉聪).
+
 An offline, open-source real-wealth resilience and asset-allocation decision-support tool for plural AI-civilization futures.
 
-**Direct use:** open `DIKWP_FUTURE_VALUE_ARK_v1.0.0.html` in a modern browser. It makes no network requests, connects to no broker, and executes no trade.
+Direct use: open `DIKWP_FUTURE_VALUE_ARK_v1.0.0.html` in a modern browser. It makes no network requests, connects to no broker, and executes no trade.
 
 Core boundaries:
 
@@ -36,3 +38,7 @@ This project is part of a thirteen-release public research cluster spanning open
 ### Research and evidence boundary
 
 Repository cross-links express shared research lineage and interoperability. They do not by themselves establish clinical efficacy, investment performance, legal validity, institutional endorsement, standards conformity, consciousness, identity or real-world authority. Review the code, tests, sources, limitations and license of each release independently.
+
+## Current interface presentation
+
+[Open the interface source](%E6%89%93%E5%BC%80_FutureValue_Ark_%E8%B5%84%E4%BA%A7%E9%9F%A7%E6%80%A7%E6%96%B9%E8%88%9F.html) from the current repository download. See [interface and authorship notes](INTERFACE_NOTES.md) for English coverage, report generation and validation scope.

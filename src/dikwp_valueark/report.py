@@ -1,5 +1,11 @@
 from __future__ import annotations
 
+if __package__:
+    from ._ui_presentation import localize_html as _ui_localize_html
+else:
+    from _ui_presentation import localize_html as _ui_localize_html
+
+
 import html
 from pathlib import Path
 from typing import Any
@@ -80,7 +86,7 @@ def html_report(analysis: dict[str, Any]) -> str:
     md = markdown_report(analysis)
     # Deliberately simple, dependency-free rendering: paragraphs and preformatted tables remain readable.
     body = html.escape(md)
-    return f"""<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>FutureValue Ark Report</title><style>body{{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;max-width:1080px;margin:2rem auto;padding:0 1rem;color:#17222d;background:#f7f9fb}}pre{{white-space:pre-wrap;background:white;border:1px solid #d9e1e8;border-radius:12px;padding:1.4rem;line-height:1.55}}.banner{{background:#17324d;color:white;padding:1rem 1.4rem;border-radius:12px;margin-bottom:1rem}}</style></head><body><div class='banner'><strong>DIKWP FutureValue Ark OS v1.0.0</strong><br>Educational decision support only · no automatic trading</div><pre>{body}</pre></body></html>"""
+    return _ui_localize_html(f"""<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>FutureValue Ark Report</title><style>body{{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;max-width:1080px;margin:2rem auto;padding:0 1rem;color:#17222d;background:#f7f9fb}}pre{{white-space:pre-wrap;background:white;border:1px solid #d9e1e8;border-radius:12px;padding:1.4rem;line-height:1.55}}.banner{{background:#17324d;color:white;padding:1rem 1.4rem;border-radius:12px;margin-bottom:1rem}}</style></head><body><div class='banner'><strong>DIKWP FutureValue Ark OS v1.0.0</strong><br>Educational decision support only · no automatic trading</div><pre>{body}</pre></body></html>""")
 
 
 def write_reports(workspace: str | Path, analysis: dict[str, Any]) -> dict[str, str]:
@@ -88,6 +94,6 @@ def write_reports(workspace: str | Path, analysis: dict[str, Any]) -> dict[str, 
     path.mkdir(parents=True, exist_ok=True)
     md_path = path / "valueark-report.md"
     html_path = path / "valueark-report.html"
-    md_path.write_text(markdown_report(analysis), encoding="utf-8")
-    html_path.write_text(html_report(analysis), encoding="utf-8")
+    md_path.write_text(_ui_localize_html(markdown_report(analysis)), encoding="utf-8")
+    html_path.write_text(_ui_localize_html(html_report(analysis)), encoding="utf-8")
     return {"markdown": str(md_path), "html": str(html_path)}
